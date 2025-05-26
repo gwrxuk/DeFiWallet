@@ -1,0 +1,24 @@
+[network]
+listen_addr = "/ip4/0.0.0.0/tcp/0"
+bootstrap_peers = [
+    "/dnsaddr/bootstrap-1.example.com/tcp/443/wss/p2p/QmBootstrap1",
+    "/dnsaddr/bootstrap-2.example.com/tcp/443/wss/p2p/QmBootstrap2"
+]
+max_peers = 50
+
+[wallet]
+storage_path = "data/wallets"
+encryption_key = "your-encryption-key-here"
+
+[blockchain]
+ethereum_rpc_url = "https://mainnet.infura.io/v3/your-project-id"
+solana_rpc_url = "https://api.mainnet-beta.solana.com"
+
+[defi]
+supported_protocols = [
+    "UniswapV2",
+    "UniswapV3",
+    "SushiSwap",
+    "Curve"
+]
+default_slippage = 0.5 
